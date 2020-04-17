@@ -80,10 +80,11 @@ namespace DatingApp.API.Controllers
 
             var token = tokenHandler.CreateToken(tokenDecriptor);
 
-            return Ok(new 
+            return Ok(new
             {
                 token = tokenHandler.WriteToken(token)
             });
+
         }
     }
 }
